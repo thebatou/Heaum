@@ -37,7 +37,7 @@ def clean(repertory_path):
     try:
         os.remove(os.path.join(repertory_path, 'tmp'))
     except:
-        os.system('rm -rf ' + repertory_path)
+        os.system('rm -rf ' + os.path.join(repertory_path, 'tmp'))
     print('[*] Remove temporary files.')
 
         
